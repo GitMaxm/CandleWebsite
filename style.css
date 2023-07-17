@@ -8,9 +8,18 @@ html {
 }
 
 body {
+  color: #000;
+  font-family: "Comfortaa", cursive;
+  /* font-family: "Yeseva One", cursive; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -23,4 +32,30 @@ header {
   background-color: #fff8f3;
 }
 .header__inner {
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  gap: 20px;
+}
+
+.menu__list-items {
+  text-transform: uppercase;
+}
+
+.phone {
+  position: relative;
+}
+.phone::before {
+  content: "";
+  position: absolute;
+  background-image: url(img/phone.svg);
+  width: 20px;
+  height: 20px;
+  left: -23px;
+  top: -3px;
 }
