@@ -15,7 +15,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
-  margin: 0px;
 }
 
 a {
@@ -25,7 +24,6 @@ a {
 
 ul {
   list-style: none;
-  padding-left: 0px;
 }
 
 .container {
