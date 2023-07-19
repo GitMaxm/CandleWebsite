@@ -191,4 +191,9 @@ footer {
   .footer__menu-list {
     flex-direction: column;
   }
+
+  .footer {
+    padding: 50px 0;
+    font-size: 14px;
+  }
 }
