@@ -50,8 +50,23 @@
           <button class="top__buy">Купить</button>
         </div>
         <picture class="top__img">
-          <img src="img/main1000.png" alt="">
+          <source media="(max-width: 360px)" srcset="img\main360.png">
+          <source media="(max-width: 480px)" srcset="img\main480.png">
+          <img class="top__img-l" src="img/main1000.png" alt="">
         </picture>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about__inner">
+        <div class="about__content">
+          <h2 class="about__title">Про нас</h2>
+          <p class="about__text">Богдан - создатель бренда, который всегда интересуется изготовлением различных
+            предметов дома. Он регулярно экспериментирует с различными материалами и инструментами, пытаясь свои силы во
+            многих областях, включая изготовление свечей.</p>
+          <p class="about__text">Соевый воск производится из соевых бобов, выращенных в Дании, и этот вид воска является
+            экологически чистым и безопасным для здоровья.</p>
+        </div>
       </div>
     </section>
   </main>
