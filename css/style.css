@@ -134,6 +134,60 @@ header {
   left: 240px;
 }
 
+.about {
+  background-color: #a5978e;
+  padding: 50px;
+  color: #fafafa;
+}
+
+.about__inner {
+  display: flex;
+  align-items: center;
+}
+
+.about__content {
+  min-width: 370px;
+}
+
+.about__title {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.about__text {
+  margin-bottom: 15px;
+}
+
+.about__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 110px;
+  padding-bottom: 48px;
+  flex-basis: 930px;
+  position: relative;
+}
+
+.about__list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url(../img/about-decor.png);
+  width: 22px;
+  height: 30px;
+}
+
+.about__list::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  bottom: 13px;
+  background-color: #7b6152;
+  width: 1000%;
+  height: 1px;
+}
+
 footer {
   padding-top: 40px;
   padding-bottom: 35px;
