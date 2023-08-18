@@ -190,11 +190,17 @@ header {
 }
 
 .section__inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: 370px auto;
 }
 
 .section__descr {
   flex-basis: 370px;
+}
+
+.section__content-descr {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 footer {
