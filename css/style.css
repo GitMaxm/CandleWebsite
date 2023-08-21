@@ -254,6 +254,41 @@ header {
   margin-bottom: 27px;
 }
 
+.steps__list {
+  gap: 70px 25px;
+  counter-reset: number;
+}
+.steps__item {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+  position: relative;
+}
+.steps__item::before {
+  counter-increment: number;
+  content: "0" counter(number);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 30px;
+  color: #bea495;
+  font-family: "Yeseva One", cursive;
+}
+
+.steps__item:nth-child(n + 10)::before {
+  content: counter(number);
+}
+
+.steps__item.steps__item--even::before {
+  left: auto;
+  right: 0;
+}
+
+.steps__item-text {
+  flex-basis: 174px;
+  padding-bottom: 40px;
+}
+
 footer {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -661,7 +696,7 @@ footer {
     font-size: 10px;
     margin-bottom: 5px;
   }
-  
+
   .products__item-title {
     font-size: 10px;
   }
