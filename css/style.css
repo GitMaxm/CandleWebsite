@@ -567,6 +567,28 @@ footer {
   .steps__text {
     font-size: 10px;
   }
+
+  .courses__item-img {
+    font-size: 8px;
+  }
+
+  .courses__title {
+    padding: 6px;
+    left: -1px;
+    top: 40%;
+  }
+
+  .courses__time {
+    padding: 5px;
+    left: -1px;
+    top: 55%;
+  }
+
+  .courses__prise {
+    padding: 10px;
+    right: -4px;
+    bottom: 4px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -731,6 +753,14 @@ footer {
 
   .steps__item::before {
     font-size: 12px;
+  }
+
+  .courses__content {
+    grid-template-columns: auto;
+  }
+
+  .courses__item-img {
+    font-size: 10px;
   }
 }
 
