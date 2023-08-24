@@ -849,4 +849,9 @@ footer {
   .products__item-text {
     margin-bottom: 16px;
   }
+
+  .courses__item,
+  .courses__item img {
+    width: 250px;
+  }
 }
