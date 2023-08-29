@@ -367,6 +367,7 @@ header {
   grid-template-columns: auto auto;
   gap: 0 16px;
   align-items: center;
+  padding-left: 10px;
 }
 
 .feedback__descr {
@@ -416,6 +417,22 @@ header {
 .feedback__slider {
   width: 760px;
   overflow: hidden;
+}
+
+.feedback__content .swiper-pagination {
+  bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  height: 4px;
+  width: 53px;
+  background-color: #bea495;
+  border-radius: 0;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7b6152;
 }
 
 footer {
