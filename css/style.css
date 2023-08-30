@@ -453,6 +453,9 @@ header {
   text-align: left;
 }
 
+.accordeon{}
+.accordeon__item{}
+
 .promo {
   background-image: url(../img/promo.jpg);
   background-repeat: no-repeat;
