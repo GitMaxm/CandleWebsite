@@ -516,6 +516,23 @@ header {
   color: #000;
 }
 
+.form__input::placeholder {
+  color: #b3b3b3;
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.form__btn {
+  font-family: Comfortaa;
+  font-size: 14px;
+  color: #272727;
+  background-color: #ffbd59;
+  margin-top: 36px;
+  padding: 17px 34px;
+}
+
 footer {
   padding-top: 40px;
   padding-bottom: 35px;
