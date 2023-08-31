@@ -41,3 +41,21 @@ const swiperTwo = new Swiper('.certificates__slider', {
         },
     },
 });
+
+const accordeon = document.querySelector('.accordeon')
+const accordeonTitles = accordeon.querySelectorAll('.accordeon__title')
+
+accordeonTitles.forEach.call(accordeonTitles, function (accordeonTitle) {
+    accordeonTitle.addEventListener('click', function () {
+        const currentText = accordeonTitle.parentElement.querySelector('.accordeon__text');
+        
+        accordeonTitle.classList.toggle('accordeon__title--active');
+        currentText.classList.toggle('accordeon__title--visible');
+
+        if (currentText.classList.contains('accordeon__title--visible')) {
+            currentText.style.maxHeight = currentText.scrollHeight + 'px'
+        } else {
+            currentText.style.maxHeight = null
+        }
+    });
+});

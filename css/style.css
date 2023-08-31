@@ -453,8 +453,44 @@ header {
   text-align: left;
 }
 
-.accordeon{}
-.accordeon__item{}
+.accordeon {
+}
+
+.accordeon__item {
+  background-color: #fafafa;
+  margin-bottom: 10px;
+}
+
+.accordeon__title {
+  font-family: "Yeseva One", cursive;
+  font-size: 16px;
+  display: block;
+  background-color: transparent;
+  padding: 16px 50px 16px 13px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+.accordeon__title::after {
+  content: "";
+  background-image: url(/img/Vector.svg);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 26px;
+  top: 17px;
+}
+
+.accordeon__text {
+  padding: 20px 30px;
+  opacity: 0;
+  max-height: 0;
+}
+
+.accordeon__text.accordeon__title--visible {
+  opacity: 1;
+}
 
 .promo {
   background-image: url(../img/promo.jpg);
