@@ -482,10 +482,18 @@ header {
   top: 17px;
 }
 
+.accordeon__title.accordeon__title--active::after {
+  transform: rotate(180%);
+}
+
 .accordeon__text {
-  padding: 20px 30px;
   opacity: 0;
   max-height: 0;
+  transition: opacity 0.3s, max-height 0.3s;
+}
+
+.accordeon__text ol {
+  padding: 20px 30px;
 }
 
 .accordeon__text.accordeon__title--visible {
@@ -991,6 +999,10 @@ footer {
 
   .form__btn {
     margin-top: 10px;
+  }
+
+  .accordeon__title {
+    font-size: 12px;
   }
 }
 
